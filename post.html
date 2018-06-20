@@ -140,7 +140,7 @@
       });
 
       function GetDataAndPopulatePage(search){
-        $.get('http://localhost:5000/?search=' + search, function(data){
+        $.get('http://159.203.47.198:5000/?search=' + search, function(data){
           console.log(data)
           course = data['course'];
           $('#title').html(course['title']);
